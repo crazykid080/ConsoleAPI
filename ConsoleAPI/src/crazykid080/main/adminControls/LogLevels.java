@@ -1,4 +1,4 @@
-package com.crazykid080.main.adminControls;
+package crazykid080.main.adminControls;
 
 /**
  * @author crazykid080

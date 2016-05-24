@@ -1,4 +1,4 @@
-package com.crazykid080.main;
+package crazykid080.main;
 
 public class Main {
 
