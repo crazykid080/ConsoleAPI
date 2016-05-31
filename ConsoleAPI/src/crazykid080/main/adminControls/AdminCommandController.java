@@ -1,12 +1,16 @@
 package crazykid080.main.adminControls;
 
+/**
+ * @author crazykid080
+ * @since 0.0.1
+ * THIS SHOULD BE EXTENDED!
+ */
 public class AdminCommandController{
 
 	/**
 	 * @author crazykid080
 	 * @since 0.0.1
 	 * @param command the text from the console.
-	 * THIS SHOULD HAVE AN EXTENDED CLASS IN YOUR PROJECT!
 	 */
 	public static void runCommand(String command){		
 		if(command.contains("exit")){
@@ -17,7 +21,8 @@ public class AdminCommandController{
 	}
 
 
-	/** @author crazykid080
+	/** 
+	 * @author crazykid080
 	 * @since 0.0.1
 	 * Exits the program.
 	 */
