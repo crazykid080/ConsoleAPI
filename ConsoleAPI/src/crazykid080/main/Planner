@@ -1,0 +1,3 @@
+Plans:
+Add a file logging system
+Add a limiter to logging (only log level X and up, default is all)
