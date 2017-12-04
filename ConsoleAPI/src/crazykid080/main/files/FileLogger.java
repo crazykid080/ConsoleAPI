@@ -9,12 +9,11 @@ import crazykid080.main.adminControls.LogLevels;
 
 public class FileLogger {
 	//File to write to
-	String filename = "ConsoleOutput.txt";
+	private static String filename = "ConsoleOutput.txt";
 
-	String line = null;
-	public void WriteToFile(String text){
+	public static void WriteToFile(String text){
 		try{
-			FileWriter fileWriter = new FileWriter(filename);
+			FileWriter fileWriter = new FileWriter(filename,true);
 			BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 			bufferedWriter.write(text);
 			bufferedWriter.newLine();
