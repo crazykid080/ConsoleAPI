@@ -25,6 +25,10 @@ public class ConsoleControl{
 		for (Object object : consoles) {
 			((AdminConsole)object).write(text , level);
 		}
+		if(shouldWrite(level)){
+			//DO THE THING WITH THE FILE THING HERE!
+			System.out.println("DO THE THING");
+		}
 	}
 
 	public static void createError(String text, LogLevels level, String className){
@@ -65,6 +69,7 @@ public class ConsoleControl{
 	}
 	
 	private static boolean shouldWrite(LogLevels lev){
+		System.out.println(lev);
 		int internalLev = 0;
 		switch (lev) {
 		case Info:
@@ -82,6 +87,7 @@ public class ConsoleControl{
 		default:
 			break;
 		}
+		System.out.println(internalLev);
 		if(fileLevInt <= internalLev){
 			return true;
 		}
