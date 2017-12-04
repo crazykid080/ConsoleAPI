@@ -1,13 +1,11 @@
 Plans:
-Add a file logging system
-Add a limiter to logging (only log level X and up, default is all)
-
-
+Add a file logging system SEMI DONE
+Add a limiter to logging (only log level X and up, default is all) DONE
 
 Thought process:
-1. Class X wants to write message Y to console.
-2. Message Y gets sent to control.
-3. Control checks log level to determine if log level is equal or greater than file logging setting
-4. If it is, write to file as well as console.
+1. Class X wants to write message Y to console. 
+2. Message Y gets sent to control. 
+3. Control checks log level to determine if log level is equal or greater than file logging setting DONE
+4. If it is, write to file as well as console. TO DO NEXT
 
-Give each log level a int value?
+Give each log level a int value? DONE
